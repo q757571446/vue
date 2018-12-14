@@ -165,6 +165,13 @@ const builds = {
     dest: resolve('packages/weex-template-compiler/build.js'),
     format: 'cjs',
     external: Object.keys(require('../packages/weex-template-compiler/package.json').dependencies)
+  },
+  'mpvue': {
+    mp: true,
+    entry: resolve('mp/entry-runtime.js'),
+    dest: resolve('packages/mpvue/index.js'),
+    format: 'umd',
+    env: 'development'
   }
 }
 
